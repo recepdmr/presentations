@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+package biletall;
+
+// The greeting service definition.
+service BiletallGrpc {
+  // Sends a greeting
+  rpc GetGunesinNeredenVuracagi (GetGunesinNeredenVuracagiRequest) returns (GetGunesinNeredenVuracagiResponse);
+}
+
+// The request message containing the user's name.
+message GetGunesinNeredenVuracagiRequest {
+  int32 kalkisNoktaId = 1;
+  int32 varisNoktaId = 2;
+}
+
+// The response message containing the greetings.
+message GetGunesinNeredenVuracagiResponse{
+  string sonuc = 1;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Dev container for go",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/go:0-1-bullseye",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/terraform:1": {}
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [8080],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "go version",
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.Go",
+        "eamodio.gitlens",
+        "PKief.material-icon-theme"
+      ],
+      "settings": {
+        "git.openRepositoryInParentFolders": "always"
+      }
+    }
+  },
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "root"
+}

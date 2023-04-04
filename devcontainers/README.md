@@ -4,6 +4,8 @@
 
 You could access slide through with [click here](https://docs.google.com/presentation/d/1_uNBw2jDTEL6xoEhPgEonLVGpDrRWfudVHLPS_ygZXw/edit?usp=sharing)
 
+Access the video record through with [click here](https://www.youtube.com/watch?v=7u6b9vu2wjI)
+
 ## Example projects
 
 ### Go project
